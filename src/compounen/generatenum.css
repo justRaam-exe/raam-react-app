@@ -1,19 +1,26 @@
 .box-styles {
     padding: 20px;
     margin: 20px;
-    border: 1px solid rgb(78, 78, 78);
+    border: none;
     border-radius: 10px;
     text-align: center;
     width: 300px;
-    background-color: grey;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.number-display:hover{
+    color: purple;
+    cursor: pointer;
 }
 
 .number-display {
     font-size: 24px;
     font-weight: bold;
     margin: 15px 0;
-    color: black;
+    color: white;
     min-height: 60px;
+    /* border: 1px solid #ccc; */
 }
 
 .generate-button:hover {

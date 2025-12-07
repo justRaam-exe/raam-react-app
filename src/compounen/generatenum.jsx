@@ -1,29 +1,38 @@
 import React, { useState } from "react";
 import './generatenum.css'
 
-function NumberGenerator() {
-    const [randNumber, setRandNumber] = useState(null);
+const setNumber = 4;
+const maxNumber = 9;
+const minNumber = 0;
 
-    const genNumber = () => {
-        const number = Math.floor(Math.random() * 10) + 1;
-        setRandNumber(number);
-    }
+function PinNumberGenerator() {
+    const [randNumber, setRandNumber] = useState([]);
+
+    const genPinNumber = () => {
+        const currentPinNum = [];
+
+        for (let i = 0; i < setNumber; i++) {
+            const randDigitNum = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+            currentPinNum.push(randDigitNum);
+        }
+        setRandNumber(currentPinNum);
+    };
 
     return (
         <div className="box-styles">
-            <h2>Generator Angka 1 - 10 </h2>
+            <h2>Pin Generator</h2>
 
             {/* tempat untuk generate number */}
             <div className="number-display">
-                {randNumber === null ? 'Klik untuk Generate angka' : randNumber}
+                {randNumber.join(' - ')}
             </div>
             
             {/* Button to generate number */}
-            <button onClick={genNumber} className="generate-button">
-                Generate Number 1 - 10
+            <button onClick={genPinNumber} className="generate-button">
+                Generate Pin Number
             </button>
         </div>
     );
 }
 
-export default NumberGenerator;
+export default PinNumberGenerator;
