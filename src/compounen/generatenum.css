@@ -1,0 +1,33 @@
+.box-styles {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: grey;
+}
+
+.number-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: black;
+    min-height: 60px;
+}
+
+.generate-button:hover {
+    background-color: purple;
+    color: white;
+    border: none;
+}
+
+.generate-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: grey;
+    color: black;
+    border-radius: 10px;
+}
