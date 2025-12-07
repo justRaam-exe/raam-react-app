@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './compounen/header.jsx'
 import Footer from './compounen/footer.jsx'
-import NumberGenerator from './compounen/generatenum.jsx'
+import PinNumberGenerator from './compounen/generatenum.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
